@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "27372811438",
+    "firebase_url": "https://grocery2home-fd9f3.firebaseio.com",
+    "project_id": "grocery2home-fd9f3",
+    "storage_bucket": "grocery2home-fd9f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27372811438:android:4dc05102a4f9e684",
+        "android_client_info": {
+          "package_name": "com.rohksin.grocery2home"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27372811438-4sj6b6n6o4eg163ucokkot83qvh6qdkq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rohksin.grocery2home",
+            "certificate_hash": "738bec4329915474ff58e5e170028dfdc6cea837"
+          }
+        },
+        {
+          "client_id": "27372811438-um22sn5aod6frvkm7hab5qu445lih4f0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVyu0jsOpI3Z-bmYw1_tvhOMJa3Tikw5Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27372811438-um22sn5aod6frvkm7hab5qu445lih4f0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
