@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
 
 /**
@@ -39,8 +41,14 @@ public class GroceryAdapter extends RecyclerView.Adapter<GroceryAdapter.GroceryV
 
         Grocery grocery = groceries.get(position);
 
-        holder.groceryImage.setImageResource(android.R.drawable.alert_dark_frame);
+        //holder.groceryImage.setImageResource(android.R.drawable.alert_dark_frame);
+        Picasso.with(context)
+                .load(grocery.getImage())
+                .into(holder.groceryImage);
+
         holder.groceryName.setText(grocery.getName());
+        holder.originalPrice.setText(grocery.getOriginalPrice());
+        holder.currentPrice.setText(grocery.getCurrentPrice());
 
     }
 
@@ -54,14 +62,16 @@ public class GroceryAdapter extends RecyclerView.Adapter<GroceryAdapter.GroceryV
 
         public ImageView groceryImage;
         public TextView groceryName;
+        public TextView currentPrice;
+        public TextView originalPrice;
 
         public GroceryViewHolder(View itemView) {
             super(itemView);
 
             groceryImage = (ImageView)itemView.findViewById(R.id.groceryImage);
             groceryName = (TextView)itemView.findViewById(R.id.groceryName);
-
-
+            currentPrice = (TextView)itemView.findViewById(R.id.currentPrice);
+            originalPrice = (TextView)itemView.findViewById(R.id.originalPrice);
 
         }
     }

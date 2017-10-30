@@ -14,6 +14,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button loginButton;
+    private Button sellerLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +22,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         loginButton = (Button)findViewById(R.id.loginButton);
+        sellerLogin = (Button)findViewById(R.id.sellerLogin);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ProductListActivity.class));
+               // startActivity(new Intent(MainActivity.this, UploadActivity.class));
+            }
+        });
+
+        sellerLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, UploadActivity.class));
             }
         });

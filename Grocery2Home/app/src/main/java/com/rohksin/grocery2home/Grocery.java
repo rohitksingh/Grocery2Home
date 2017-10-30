@@ -12,6 +12,11 @@ public class Grocery {
     public String currentPrice;
 
 
+    public Grocery()
+    {
+
+    }
+
     public Grocery(String name)
     {
         this.name = name;
